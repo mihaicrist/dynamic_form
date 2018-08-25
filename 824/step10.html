@@ -22,28 +22,27 @@
                             <div class="col-sm-3 avatardiv">
                                 <img class="avatar " src="http://api.chasedatacorp.com/assets/profile.png ">
                             </div>
-                            <div class="col-sm-9 adjust">
+                            <div class="col-sm-9 adjust ">
                                 <div class="col-sm-12">
-                                    <div class="col-sm-12 nopadding">
-                                        <span class="bold ">(#FirstName#) (#LastName#) (#Preferred Name#)</span>
+                                    <div class="col-sm-12 nopadding ">
+                                        <span class="bold ">(#FirstName#) (#LastName#)</span>
                                         <br>
-                                        <input type="text" class="company" readonly="true" value="(#Carrier Product 2#)" name="Carrier Product 2" field-name="Carrier Product 2">
-                                        <input type="text" class="plan" readonly="true" value="(#Plan#)" name="Plan" field-name="Plan">
+                                        <input type="text" class="company form-control" readonly="true" value="(#Carrier Product 2#)" name="Carrier Product 2" field-name="Carrier Product 2">
                                     </div>
                                 </div>
-                                <div class="col-sm-12 nopadding" id="">
-                                    <div class="col-sm-3 nopadding c-3">
+                                <div class="col-sm-12 nopadding " id="">
+                                    <div class="col-sm-3 nopadding c-3 ">
                                         <strong>Lead ID:</strong>
                                     </div>
-                                    <div class="col-sm-9 nopadding c-9">
+                                    <div class="col-sm-9 nopadding c-9 ">
                                         <input class="control-input form-control clientId" size="4" type="text" control="input" field-name="ClientId" id="clientId">
                                     </div>
                                 </div>
-                                <div class="col-sm-12 nopadding">
-                                    <div class="col-sm-3 nopadding c-3">
+                                <div class="col-sm-12 nopadding ">
+                                    <div class="col-sm-3 nopadding c-3 ">
                                         <strong>Phone:</strong>
                                     </div>
-                                    <div class="col-sm-9 nopadding PrimaryPhone c-9" id="">
+                                    <div class="col-sm-9 nopadding PrimaryPhone c-9 " id="">
                                         <span id="PrimaryPhone" name="PrimaryPhone">(#PrimaryPhone#)</span>
                                     </div>
                                 </div>
@@ -60,9 +59,6 @@
                             <input type="hidden" control="input " id="Plan" value="(#Plan#)">
                             <input type="hidden" control="input " id="AppStatus" value="(#App Status#)">
                             <input type="hidden" control="input " id="SoldAgent" value="(#Sold Agent#)">
-                            <input type="hidden" control="input " id="DentalPlan" value="(#Dental Plan#)">
-                            <input type="hidden" control="input " id="DentalCoverage" value="(#Dental Coverage#)">
-                            <input type="hidden" control="input " id="VisionCoverage" value="(#Vision Coverage#)">
 
                             <button class="button hidden submit" id="submit">SAVE</button>
                             <input type="submit" control="submit" action="submit_and_navigate" navigate-to="step11" value="NEXT" class="button hidden next step11">
@@ -74,18 +70,177 @@
                             <input type="submit" control="submit" action="submit_and_navigate" navigate-to="step16" value="step16" class="button hidden step16">
 
                             <!-- end secion 1 -->
-                            <div class="col-sm-12 ">
-                                <div class="col-sm-12 title " id="">
-                                    <h4 class="bottombar top0 ">Contact Information</h4>
-                                </div>
-                                <!--First Row-->
-                                <div class="col-sm-12 col12">
-                                    <div class="col-sm-6 nopadding">
-                                        <div class="col-sm-7 nopaddingleft">
-                                            <label><strong>Email</strong></label>
+                            <div id="contactInfo">
+                                <!-- start section 2 -->
+                                <div class="col-sm-12 ">
+                                    <div class="col-sm-12 title " id="">
+                                        <h4 class="bottombar top0 ">Contact Information</h4>
+                                    </div>
+                                    <div class="col-sm-12 col12">
+                                        <div class="col-sm-6">
+                                            <label><strong>Desired Coverage</strong>
+                                            </label>
+                                            <input type="text" control="input " field-name="Desired Coverage" class="form-control" name="Desired Coverage" value="(#Desired Coverage#)">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label><strong>Preferred Name</strong>
+                                            </label>
+                                            <input type="text" control="input " field-name="Preferred Name" class="form-control" name="Preferred Name" value="(#Preferred Name#)">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-12 col12">
+                                        <div class="col-sm-6">
+                                            <label><strong>Hobby Color</strong>
+                                            </label>
+                                            <input type="text" control="input " class="form-control" field-name="Hobbycolor" name="Hobbycolor" value="(#Hobbycolor#)">
+                                        </div>
+
+                                        <div class="col-sm-6">
+                                            <label><strong>Tobacco Use</strong>
+                                            </label>
+                                            <!--<select name="Tobacco Use" value="(#Tobacco Use#)" class="form-control">-->
+                                            <!--    <option value="Yes">Yes</option>-->
+                                            <!--    <option value="No">No</option>-->
+                                            <!--</select>-->
+                                            <input type="text" control="input " class="form-control" field-name="Tobacco Use" name="Tobacco Use" value="(#Tobacco Use#)">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-12 col12">
+                                        <div class="col-sm-6">
+                                            <label><strong>Age</strong>
+                                            </label>
+                                            <input type="text" control="input " class="form-control" field-name="Age" name="Age" value="(#Age#)">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label><strong>Date of Birth</strong>
+                                            </label>
+                                            <!--<input type="text" control="input " class="form-control" field-name="Date of Birth" name="Date of Birth" value="(#Date of Birth#)">-->
+                                            <input type="date" class="form-control" field-name="Date of Birth" name="Date of Birth" value="(#Date of Birth#)">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-12 col12">
+                                        <div class="col-sm-6">
+                                            <label><strong>Premium</strong>
+                                            </label>
+                                            <input type="number" step="0.01" control="input " class="form-control" field-name="Premium" name="Premium" value="(#Premium#)" autocomplete="off">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="col-sm-6 ZipCode">
+                                                <label><strong>Height</strong>
+                                                </label>
+                                                <input type="text" control="input " class="form-control" field-name="Height" name="Height" value="(#Height#)">
+                                            </div>
+                                            <div class="col-sm-6 St">
+                                                <label><strong>Weight</strong>
+                                                </label>
+                                                <input type="text" control="input " class="form-control" field-name="Weight" name="Weight" value="(#Weight#)">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-12 col12">
+                                        <div class="col-sm-6">
+                                            <label><strong>Email</strong>
+                                            </label>
                                             <input type="text" control="input " class="form-control" field-name="Email" name="Email" value="(#Email#)">
                                         </div>
-                                        <div class="col-sm-5 nopadding">
+                                        <div class="col-sm-6">
+                                            <label><strong>Beneficiary</strong>
+                                            </label>
+                                            <input type="text" control="input " class="form-control" field-name="Beneficiary" name="Beneficiary" value="(#Beneficiary#)">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-12 col12">
+                                        <div class="col-sm-6">
+                                            <label><strong>Contingent Beneficiary</strong>
+                                            </label>
+                                            <input type="text" control="input " class="form-control" field-name="Contingent Beneficiary" name="Contingent Beneficiary" value="(#Contingent Beneficiary#)">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label><strong>State or Country of Birth</strong>
+                                            </label>
+                                            <input type="text" control="input " class="form-control" field-name="State or Country of Birth" name="State or Country of Birth" value="(#State or Country of Birth#)">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-12 col12">
+                                        <div class="col-sm-6">
+                                            <label><strong>Burial/Cremation</strong>
+                                            </label>
+                                            <input type="text" control="input " class="form-control" field-name="Burial/Cremation" name="Burial/Cremation" value="(#Burial/Cremation#)">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label><strong>Budget</strong>
+                                            </label>
+                                            <input type="text" control="input " class="form-control" field-name="Budget" name="Budget" value="(#Budget#)">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-12 col12">
+                                        <div class="col-sm-6">
+                                            <label><strong>Face Amount</strong>
+                                            </label>
+                                            <input type="text" control="input " class="form-control" field-name="Face Amount" name="Face Amount" value="(#Face Amount#)">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label><strong>Address</strong>
+                                            </label>
+                                            <input type="text" control="input " class="form-control" field-name="Address" name="Address" value="(#Address#)">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-12 col12">
+                                        <div class="col-sm-4">
+                                            <label><strong>City</strong>
+                                            </label>
+                                            <input type="text" control="input " class="form-control" field-name="City" name="City" value="(#City#)">
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <label>Zip Code</label>
+                                            <input type="text" control="input " class="form-control" field-name="ZipCode" name="ZipCode" value="(#ZipCode#)">
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <label><strong>State</strong>
+                                            </label>
+                                            <input type="text" control="input " class="form-control" field-name="State" name="State" value="(#State#)">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-12 col12">
+                                        <div class="col-sm-4">
+                                            <label>First Name</label>
+                                            <input type="text" control="input " class="form-control" field-name="FirstName" name="FirstName" value="(#FirstName#)">
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <label>Middle Initial</label>
+                                            <input type="text" control="input " class="form-control" field-name="Middle Initial" name="Middle Initial" value="(#Middle Initial#)">
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <label>Last Name</label>
+                                            <input type="text" control="input " class="form-control" field-name="LastName" name="LastName" value="(#LastName#)">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col12">
+                                        <div class="col-sm-4">
+                                            <label>Gender</label>
+                                            <select field-name="Gender " class="form-control" name="Gender">
+                                                <option value="Male">Male</option>
+                                                <option value="Female">Female</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <label>Account Type</label>
+                                            <select field-name="Account Type " class="form-control" name="Account Type">
+                                                <option value="Checking">Checking</option>
+                                                <option value="DX Card">DX Card</option>
+                                                <option value="Credit Debit">Credit Debit</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-4">
                                             <label>App Status</label>
                                             <select field-name="App Status" class="form-control" name="App Status">
                                                 <option value="Approved">Approved</option>
@@ -94,16 +249,72 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="col-sm-6">
-                                        <label>Carrier Policy Number</label>
-                                        <input type="text" control="input " class="form-control" field-name="Carrier Policy Number" name="Carrier Policy Number" value="(#Carrier Policy Number#)">
+
+
+                                    <div class="col-sm-12 col12">
+                                        <div class="col-sm-6">
+                                            <label><strong>Primary Phone</strong>
+                                            </label>
+                                            <input type="text" control="input " class="form-control" field-name="PrimaryPhone" name="PrimaryPhone" value="(#PrimaryPhone#)">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label><strong>Draft Date</strong>
+                                            </label>
+                                            <input type="text" control="input " class="form-control" field-name="Draft Date" name="Draft Date" value="(#Draft Date#)">
+                                            <!--<input type="date" field-name="Draft Date" class="form-control" name="Draft Date" value="(#Draft Date#)">-->
+                                        </div>
                                     </div>
-                                </div>
-                                <!--Second Row-->
-                                <div class="col-sm-12 col12">
-                                    <div class="col-sm-6">
-                                        <label><strong>Sold Agent</strong></label>
-                                        <select name="Sold Agent" value="(#Sold Agent#)" class="form-control">
+
+                                    <div class="col-sm-12 col12">
+                                        <div class="col-sm-6">
+                                            <label><strong>Future Draft Date</strong>
+                                            </label>
+                                            <input type="text" control="input " class="form-control" field-name="Future Draft Date" name="Future Draft Date" value="(#Future Draft Date#)">
+                                            <!--<input type="date" field-name="Future Draft Date" class="form-control" name="Future Draft Date" value="(#Future Draft Date#)">-->
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label><strong>Bank Name</strong>
+                                            </label>
+                                            <input type="text" control="input " class="form-control" field-name="Bank Name" name="Bank Name" value="(#Bank Name#)">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-12 col12">
+                                        <div class="col-sm-6">
+                                            <label><strong>Expiration Date</strong>
+                                            </label>
+                                            <input type="date" field-name="Exp. Date" class="form-control" name="Exp. Date" value="(#Exp. Date#)">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label><strong>CCV Code</strong>
+                                            </label>
+                                            <input type="text" control="input " class="form-control" field-name="CCV Code" name="CCV Code" value="(#CCV Code#)">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-12 col12">
+                                        <div class="col-sm-6">
+                                            <label><strong>Name On Checking or DX</strong>
+                                            </label>
+                                            <input type="text" control="input " class="form-control" field-name="Name On Checking or DX" name="Name On Checking or DX" value="(#Name On Checking or DX#)">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label><strong>Routing Number</strong>
+                                            </label>
+                                            <input type="text" control="input " class="form-control" field-name="Routing Number" name="Routing Number" value="(#Routing Number#)">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-12 col12">
+                                        <div class="col-sm-6">
+                                            <label><strong>Account Number</strong>
+                                            </label>
+                                            <input type="text" control="input " class="form-control" field-name="Account Number" name="Account Number" value="(#Account Number#)">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label><strong>Sold Agent</strong>
+                                            </label>
+                                            <select name="Sold Agent" value="(#Sold Agent#)" class="form-control">
                                                 <option>Amanda Tompkins</option>
                                                 <option>Barry Lyons</option>
                                                 <option>Colter Stecklein</option>
@@ -120,160 +331,49 @@
                                                 <option>Mike Grasso</option>
                                                 <option>Mike Stolp</option>
                                             </select>
-                                        <!-- <input type="text" control="input " class="form-control" field-name="Sold Agent" name="Sold Agent" value="(#Sold Agent#)"> -->
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <label><strong>Desired Coverage</strong>
-                                            </label>
-                                        <input type="text" control="input " field-name="Desired Coverage" class="form-control" name="Desired Coverage" value="(#Desired Coverage#)">
-                                    </div>
-                                </div>
-                                <!--Third Row-->
-                                <div class="col-sm-12" style="padding-left: 10px;">
-                                    <label>Notes</label>
-                                    <textarea field-name="Notes" name="Notes">(#Notes#)</textarea>
-                                </div>
-                                <!--Fourth Row-->
-                                <div class="col-sm-12" style="padding-left: 10px;">
-                                    <label>Medications</label>
-                                    <textarea field-name="Medications" name="Medications">(#Medications#)</textarea>
-                                </div>
-                                <!--Fifth Row-->
-                                <div class="col-sm-12 col12">
-                                    <div class="col-sm-4 nopaddingright">
-                                        <label>First Name</label>
-                                        <input type="text" control="input " class="form-control" field-name="FirstName" name="FirstName" value="(#FirstName#)">
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <label>Middle Initial</label>
-                                        <input type="text" control="input " class="form-control" field-name="Middle Initial" name="Middle Initial" value="(#Middle Initial#)">
-                                    </div>
-                                    <div class="col-sm-4 nopaddingleft">
-                                        <label>Last Name</label>
-                                        <input type="text" control="input " class="form-control" field-name="LastName" name="LastName" value="(#LastName#)">
-                                    </div>
-                                </div>
-                                <!--Sixth Row-->
-                                <div class="col-sm-12 col12">
-                                    <div class="col-sm-6">
-                                        <label><strong>Address</strong>
-                                            </label>
-                                        <input type="text" control="input " class="form-control" field-name="Address" name="Address" value="(#Address#)">
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <label><strong>Address 2</strong>
-                                            </label>
-                                        <input type="text" control="input " class="form-control" field-name="Address 2" name="Address 2" value="(#Address 2#)">
-                                    </div>
-                                </div>
-
-                                <!--Seventh Row-->
-                                <div class="col-sm-12 col12">
-                                    <div class="col-sm-4 nopaddingright">
-                                        <label><strong>City</strong>
-                                            </label>
-                                        <input type="text" control="input " class="form-control" field-name="City" name="City" value="(#City#)">
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <label>Zip Code</label>
-                                        <input type="text" control="input " class="form-control" field-name="ZipCode" name="ZipCode" value="(#ZipCode#)">
-                                    </div>
-                                    <div class="col-sm-4 nopaddingleft">
-                                        <label><strong>State</strong></label>
-                                        <input type="text" control="input " class="form-control" field-name="State" name="State" value="(#State#)">
-                                    </div>
-                                </div>
-
-                                <!--Eighth Row-->
-                                <div class="col-sm-12 col12">
-                                    <div class="col-sm-6">
-                                        <label><strong>Primary Phone</strong>
-                                            </label>
-                                        <input type="text" control="input " class="form-control" field-name="PrimaryPhone" name="PrimaryPhone" value="(#PrimaryPhone#)">
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <label><strong>Closer Agent</strong></label>
-                                        <input type="text" control="input " class="form-control" field-name="Closer Agent" name="Closer Agent" value="(#Closer Agent#)">
-                                    </div>
-                                </div>
-
-                                <div class="col-sm-12 col12">
-                                    <div class="col-sm-6">
-                                        <label><strong>Alt Phone 1</strong></label>
-                                        <input type="text" control="input " class="form-control" field-name="Alt Phone 1" name="Alt Phone 1" value="(#Alt Phone 1#)">
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <label><strong>Alt Phone 2</strong></label>
-                                        <input type="text" control="input " class="form-control" field-name="Alt Phone 2" name="Alt Phone 2" value="(#Alt Phone 2#)">
-                                    </div>
-                                </div>
-
-                                <!--Ninth Row-->
-                                <div class="col-sm-12 col12">
-                                    <div class="col-sm-2 nopaddingright">
-                                        <label><strong>Age</strong>
-                                            </label>
-                                        <input type="text" control="input " class="form-control" field-name="Age" name="Age" value="(#Age#)">
-                                    </div>
-                                    <div class="col-sm-5">
-                                        <label><strong>Date of Birth</strong>
-                                            </label>
-                                        <!--<input type="text" control="input " class="form-control" field-name="Date of Birth" name="Date of Birth" value="(#Date of Birth#)">-->
-                                        <input type="date" class="form-control" field-name="Date of Birth" name="Date of Birth" value="(#Date of Birth#)">
-                                    </div>
-                                    <div class="col-sm-5 nopaddingleft">
-                                        <label><strong>State or Country of Birth</strong>
-                                            </label>
-                                        <input type="text" control="input " class="form-control" field-name="State or Country of Birth" name="State or Country of Birth" value="(#State or Country of Birth#)">
-                                    </div>
-                                </div>
-
-                                <!--Tenth Row-->
-                                <div class="col-sm-12 col12">
-                                    <div class="col-sm-6">
-                                        <label><strong>Tobacco Use</strong></label>
-                                        <!--<select name="Tobacco Use" value="(#Tobacco Use#)" class="form-control">-->
-                                        <!--    <option value="Yes">Yes</option>-->
-                                        <!--    <option value="No">No</option>-->
-                                        <!--</select>-->
-                                        <input type="text" control="input " class="form-control" field-name="Tobacco Use" name="Tobacco Use" value="(#Tobacco Use#)">
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="col-sm-6 ZipCode">
-                                            <label><strong>Height</strong></label>
-                                            <input type="text" control="input " class="form-control" field-name="Height" name="Height" value="(#Height#)">
-                                        </div>
-                                        <div class="col-sm-6 St">
-                                            <label><strong>Weight</strong></label>
-                                            <input type="text" control="input " class="form-control" field-name="Weight" name="Weight" value="(#Weight#)">
+                                            <!--<input type="text" control="input " class="form-control" field-name="Sold Agent" name="Sold Agent" value="(#Sold Agent#)">-->
                                         </div>
                                     </div>
-                                </div>
 
-                                <!--Eleventh Row-->
-                                <div class="col-sm-12 col12">
-                                    <div class="col-sm-6">
-                                        <label>Gender</label>
-                                        <select field-name="Gender" class="form-control" name="Gender">
-                                                <option value="Male">Male</option>
-                                                <option value="Female">Female</option>
-                                            </select>
+                                    <div class="col-sm-12 col12">
+                                        <div class="col-sm-6">
+                                            <label><strong>Closer Agent</strong>
+                                            </label>
+                                            <input type="text" control="input " class="form-control" field-name="Closer Agent" name="Closer Agent" value="(#Closer Agent#)">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label><strong>Enrollment Rep</strong>
+                                            </label>
+                                            <input type="text" control="input " class="form-control" field-name="Enrollment Rep" name="Enrollment Rep" value="(#Enrollment Rep#)">
+                                        </div>
                                     </div>
-                                    <div class="col-sm-6">
-                                        <label>Account Type</label>
-                                        <select field-name="Account Type" class="form-control" name="Account Type">
-                                                <option value="Checking">Checking</option>
-                                                <option value="DX Card">DX Card</option>
-                                                <option value="Credit Debit">Credit Debit</option>
-                                            </select>
-                                    </div>
-                                </div>
 
-                                <!--Twelfth Row-->
-                                <div class="col-sm-12 col12">
-                                    <div class="col-sm-6">
-                                        <label>Carrier Product 2</label>
-                                        <select field-name="Carrier Product 2" class="form-control" name="Carrier Product 2" id="carrier">
+                                    <div class="col-sm-12 col12">
+                                        <div class="col-sm-6">
+                                            <label>Social Security Number</label>
+                                            <input type="text" control="input " class="form-control" field-name="Social Security Number" name="Social Security Number" value="(#Social Security Number#)">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label>Drivers License</label>
+                                            <input type="text" control="input " class="form-control" field-name="Drivers License" name="Drivers License" value="(#Drivers License#)">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-12 col12">
+                                        <div class="col-sm-6">
+                                            <label>Primary Care Physician</label>
+                                            <input type="text" control="input " class="form-control" field-name="Primary Care Physician" name="Primary Care Physician" value="(#Primary Care Physician#)">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label>Carrier Policy Number</label>
+                                            <input type="text" control="input " class="form-control" field-name="Carrier Policy Number" name="Carrier Policy Number" value="(#Carrier Policy Number#)">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-12 col12">
+                                        <div class="col-sm-6">
+                                            <label>Carrier Product 2</label>
+                                            <select field-name="Carrier Product 2" class="form-control" name="Carrier Product 2" id="carrier">
                                                 <option value="Royal Neighbors of America">Royal Neighbors of America</option>
                                                 <option value="Baltimore Life">Baltimore Life</option>
                                                 <option value="Liberty Bankers Life">Liberty Bankers Life</option>
@@ -283,201 +383,47 @@
                                                 <!--<option value="Prosperity">Prosperity</option>-->
                                                 <!--<option value="5Star Life">5Star Life</option>-->
                                             </select>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <label>Plan</label>
-                                        <select field-name="Plan" name="Plan" class="form-control">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label>Plan</label>
+                                            <select field-name="Plan" name="Plan" class="form-control">
                                             </select>
+                                        </div>
                                     </div>
                                 </div>
-                                <!--Thirteenth Row-->
-                                <div class="col-sm-12 col12">
-                                    <div class="col-sm-6">
-                                        <label><strong>Face Amount</strong>
-                                            </label>
-                                        <input type="text" control="input " class="form-control" field-name="Face Amount" name="Face Amount" value="(#Face Amount#)">
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <label><strong>Premium</strong>
-                                            </label>
-                                        <input type="number" control="input " step=".01" class="form-control" field-name="Premium" name="Premium" value="(#Premium#)" autocomplete="off">
-                                    </div>
+                                <div class="col-sm-12" style="padding-left: 10px;">
+                                    <label>Notes</label>
+                                    <textarea field-name="Notes" name="Notes">(#Notes#)</textarea>
                                 </div>
-                                <!--Fourteenth Row-->
-                                <div class="col-sm-12 nopaddingright">
-                                    <div class="col-sm-12 nopaddingleft">
-                                        <label><strong>Beneficiary</strong></label>
-                                        <input type="text" control="input " class="form-control" field-name="Beneficiary" name="Beneficiary" value="(#Beneficiary#)">
-                                    </div>
+                                <div class="col-sm-12" style="padding-left: 10px;">
+                                    <label>Medications</label>
+                                    <textarea field-name="Medications" name="Medications">(#Medications#)</textarea>
                                 </div>
-                                <!--Fifteenth Row-->
-                                <div class="col-sm-12 nopaddingright">
-                                    <div class="col-sm-12 nopaddingleft">
-                                        <label><strong>Contingent Beneficiary</strong></label>
-                                        <input type="text" control="input " class="form-control" field-name="Contingent Beneficiary" name="Contingent Beneficiary" value="(#Contingent Beneficiary#)">
-                                    </div>
-                                </div>
-
-                                <!--Sixth Row-->
-                                <div class="col-sm-12 col12">
-                                    <div class="col-sm-6">
-                                        <label><strong>Draft Date</strong></label>
-                                        <input type="text" control="input " class="form-control" field-name="Draft Date" name="Draft Date" value="(#Draft Date#)">
-                                        <!--<input type="date" field-name="Draft Date" class="form-control" name="Draft Date" value="(#Draft Date#)">-->
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <label><strong>Future Draft Date</strong></label>
-                                        <input type="text" control="input " class="form-control" field-name="Future Draft Date" name="Future Draft Date" value="(#Future Draft Date#)">
-                                        <!--<input type="date" field-name="Future Draft Date" class="form-control" name="Future Draft Date" value="(#Future Draft Date#)">-->
-                                    </div>
-                                </div>
-                                <!--Seventeenth Row-->
-                                <div class="col-sm-12 col12">
-                                    <div class="col-sm-6">
-                                        <label>Social Security Number</label>
-                                        <input type="text" control="input " class="form-control" field-name="Social Security Number" name="Social Security Number" value="(#Social Security Number#)">
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <label>Drivers License</label>
-                                        <input type="text" control="input " class="form-control" field-name="Drivers License" name="Drivers License" value="(#Drivers License#)">
-                                    </div>
-                                </div>
-                                <!--Eighteenth Row-->
-                                <div class="col-sm-12 nopaddingright">
-                                    <div class="col-sm-12 nopaddingleft">
-                                        <label><strong>Name On Checking or DX</strong></label>
-                                        <input type="text" control="input " class="form-control" field-name="Name On Checking or DX" name="Name On Checking or DX" value="(#Name On Checking or DX#)">
-                                    </div>
-                                </div>
-                                <!--Nineteenth Row-->
-                                <div class="col-sm-12 nopaddingright">
-                                    <div class="col-sm-12 nopaddingleft">
-                                        <label><strong>Bank Name</strong></label>
-                                        <input type="text" control="input " class="form-control" field-name="Bank Name" name="Bank Name" value="(#Bank Name#)">
-                                    </div>
-                                </div>
-                                <!--Twentieth Row-->
-                                <div class="col-sm-12 col12">
-                                    <div class="col-sm-5">
-                                        <label><strong>Routing Number</strong></label>
-                                        <input type="text" control="input " class="form-control" field-name="Routing Number" name="Routing Number" value="(#Routing Number#)">
-                                    </div>
-                                    <div class="col-sm-7">
-                                        <label><strong>Account Number</strong></label>
-                                        <input type="text" control="input " class="form-control" field-name="Account Number" name="Account Number" value="(#Account Number#)">
-                                    </div>
-                                </div>
-                                <!--Twenty-first Row-->
-                                <div class="col-sm-12 col12">
-                                    <div class="col-sm-6">
-                                        <label><strong>Expiration Date</strong></label>
-                                        <input type="date" field-name="Exp. Date" class="form-control" name="Exp. Date" value="(#Exp. Date#)">
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <label><strong>CCV Code</strong></label>
-                                        <input type="text" control="input " class="form-control" field-name="CCV Code" name="CCV Code" value="(#CCV Code#)">
-                                    </div>
-                                </div>
-                                <!--Twenty-second Row-->
-                                <div class="col-sm-12 nopaddingright">
-                                    <div class="col-sm-12 nopaddingleft">
-                                        <label>Primary Care Physician</label>
-                                        <input type="text" control="input " class="form-control" field-name="Primary Care Physician" name="Primary Care Physician" value="(#Primary Care Physician#)">
-                                    </div>
-                                </div>
-                                <!--Twenty-Third Row-->
                                 <div class="col-sm-12" style="padding-left: 10px;">
                                     <label>Current Insurance Info</label>
                                     <!--<input type="text" control="input " class="form-control" field-name="Current Insurance Info" name="Current Insurance Info" value="(#Current Insurance Info#)">-->
                                     <textarea name="Current Insurance Info" field-name="Current Insurance Info">(#Current Insurance Info#)</textarea>
                                 </div>
-                                <!--Twenty-Fourth Row-->
                                 <div class="col-sm-12" style="padding-left: 10px;">
                                     <label>Child/G-Child</label>
                                     <!--<input type="text" control="input " class="form-control" field-name="Child/G-Child" name="Child/G-Child" value="(#Child/G-Child#)">-->
                                     <textarea field-name="Child/G-Child" name="Child/G-Child">(#Child/G-Child#)</textarea>
                                 </div>
-                                <!--Twenty Fifth Row-->
                                 <div class="col-sm-12" style="padding-left:10px;">
                                     <label>Occupation Name of Disability</label>
                                     <!--<input type="text" control="input " class="form-control" field-name="Occupation Name of Disability" name="Occupation Name of Disability" value="(#Occupation Name of Disability#)">-->
                                     <textarea field-name="Occupation Name of Disability" name="Occupation Name of Disability">(#Occupation Name of Disability#)</textarea>
                                 </div>
-                                <!--Twenty-Sixth Row-->
                                 <div class="col-sm-12" style="padding-left:10px;">
                                     <label>Quote</label>
                                     <!--<input type="text" control="input " class="form-control" field-name="Quote" name="Quote" value="(#Quote#)">-->
                                     <textarea field-name="Quote" name="Quote">(#Quote#)</textarea>
                                 </div>
-
-                                <!--Twenty-Seventh Row-->
-
-                                <!--Twenty-Eighth Row-->
-                                <div class="col-sm-12 col12">
-                                    <div class="col-sm-6">
-                                        <label>Dental Plan</label>
-                                        <select name="Dental Plan" field-name="Dental Plan" class="form-control">
-                                                <option value="None">None</option>                                              
-                                                <option value="1500">1500</option>
-                                                <option value="3000">3000</option>
-                                                <option value="5000">5000</option>
-                                            </select>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <label>Dental Coverage</label>
-                                        <select name="Dental Coverage" field-name="Dental Coverage" class="form-control">                                                
-                                                <option value="None">None</option>
-                                                <option value="Member">Member</option>
-                                                <option value="Member &amp; Spouse">Member &amp; Spouse</option>
-                                                <option value="Member & Children">Member & Children</option>                                                
-                                                <option value="Family">Family</option>
-                                            </select>
-                                    </div>
-                                </div>
-                                <!--Twenty-Ninth Row-->
+                                <!-- end section 2 -->
                                 <div class="col-sm-12">
-                                    <div class="col-sm-6">
-                                        <label>Vision Coverage</label>
-                                        <select name="Vision Coverage" field-name="Vision Coverage" class="form-control">                                                
-                                                <option value="None">None</option>
-                                                <option value="Member">Member</option>
-                                                <option value="Member &amp; Spouse">Member &amp; Spouse</option>
-                                                <option value="Member & Children">Member & Children</option>                                                
-                                                <option value="Family">Family</option>
-                                            </select>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <label><strong>Enrollment Rep</strong></label>
-                                        <input type="text" control="input " class="form-control" field-name="Enrollment Rep" name="Enrollment Rep" value="(#Enrollment Rep#)">
-                                    </div>
+                                    <div class="blank"></div>
+                                    <div class="blank"></div>
                                 </div>
-
-                                <!--Thirtieth Row-->
-                                <div class="col-sm-12 col12">
-                                    <div class="col-sm-6">
-                                        <label><strong>Hobby Color</strong></label>
-                                        <input type="text" control="input " class="form-control" field-name="Hobbycolor" name="Hobbycolor" value="(#Hobbycolor#)">
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <label><strong>Preferred Name</strong></label>
-                                        <input type="text" control="input " field-name="Preferred Name" class="form-control" name="Preferred Name" value="(#Preferred Name#)">
-                                    </div>
-                                </div>
-                                <!--Thirty-First Row-->
-                                <div class="col-sm-12 col12">
-                                    <div class="col-sm-6">
-                                        <label><strong>Burial/Cremation</strong></label>
-                                        <input type="text" control="input " class="form-control" field-name="Burial/Cremation" name="Burial/Cremation" value="(#Burial/Cremation#)">
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <label><strong>Budget</strong></label>
-                                        <input type="text" control="input " class="form-control" field-name="Budget" name="Budget" value="(#Budget#)">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-12">
-                                <div class="blank"></div>
-                                <div class="blank"></div>
                             </div>
                         </form>
                     </div>
@@ -636,7 +582,8 @@
 </body>
 
 </html>
-<style type="text/css">
+
+<style>
     #content {
         padding-left: 0px;
     }
@@ -717,13 +664,7 @@
     }
     
     .nopaddingright {
-        padding-left: 10px;
         padding-right: 0px;
-    }
-    
-    .nopaddingleft {
-        padding-left: 0px;
-        padding-right: 10px;
     }
     
     .paddingleft {
@@ -825,10 +766,22 @@
         padding-bottom: 0px;
     }
     
+    .col-sm-3,
+    .col-sm-5 {
+        margin-top: 10px;
+    }
+    
     .bold {
         font-weight: 700!important;
         color: black;
         font-size: 18px!important;
+    }
+    
+    .company {
+        font-size: 16px;
+        color: black;
+        padding-left: 0px;
+        border-bottom: none!important;
     }
     
     select {
@@ -863,7 +816,6 @@
         }
         .rightSide {
             padding-left: 0px;
-            margin-top: 15px;
         }
         .adjust {
             margin-top: 0px;
@@ -1255,35 +1207,8 @@
     a {
         color: black;
     }
-    /* 8 / 24 */
-    
-    .plan {
-        display: inline-block;
-        float: left;
-        font-size: 16px;
-        color: black;
-        padding-left: 0px;
-        border-bottom: none!important;
-        width: 50%;
-        font-size: 13px!important;
-    }
-    
-    .company {
-        display: inline-block;
-        float: left;
-        font-size: 16px;
-        color: black;
-        padding-left: 0px;
-        border-bottom: none!important;
-        width: 50%;
-    }
-    
-    .col-sm-3 {
-        /*margin-top: 10px;*/
-    }
 </style>
-
-<script type="text/javascript">
+<script>
     function hideTags() {
         var names = ['rna', 'balt', 'lbl', 'amer'];
         for (var i = 0; i < names.length; i++) {
@@ -1315,7 +1240,6 @@
         for (var i = 0; i < selects.length; i++) {
             selects[i].innerHTML = "";
             var html = "";
-            if (selects[i].className == "plan") continue;
             for (var j = 0; j < plans[company].length; j++) {
                 if (j == 0 || plans[company][j] == document.getElementById('Plan').value)
                     html += "<option value='" + plans[company][j] + "' selected=''>" + plans[company][j] + "</option>";
@@ -1325,7 +1249,6 @@
             selects[i].innerHTML = html;
         }
         document.getElementById('Plan').value = selects[0].value;
-        document.getElementsByClassName('plan')[0].value = selects[1].value;
 
         hideTags();
         if (company == 'Royal Neighbors of America') {
@@ -1339,11 +1262,12 @@
         }
     }
 
+
     (function() {
         cur_page = parseInt(document.getElementById('page').value);
         hideTags();
-        var names = ['Gender', 'App Status', 'Carrier Product 2', 'Account Type', 'Plan', 'Sold Agent', 'Dental Plan', 'Dental Coverage', 'Vision Coverage'];
-        var ids = ['Gender', 'AppStatus', 'CarrierProduct2', 'AccountType', 'Plan', 'SoldAgent', 'DentalPlan', 'DentalCoverage', 'VisionCoverage'];
+        var names = ['Gender', 'App Status', 'Carrier Product 2', 'Account Type', 'Plan', 'Sold Agent'];
+        var ids = ['Gender', 'AppStatus', 'CarrierProduct2', 'AccountType', 'Plan', 'SoldAgent'];
 
         var inputs, index, name, notes, selects;
         for (var i = 0; i < names.length; i++) {
