@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://www.chasedatacorp.com/assets/css/font-awesome.min.css" rel="stylesheet">
+    <link id="main-sheet" rel="stylesheet" href="http://www.chasedatacorp.com/assets/css/bootstrap.min.css">
+</head>
+
+<body class="" id="">
+    <form control="form" style="padding: 12px;" class="dynamic-form">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3>Verification</h3>
+            </div>
+            <div class="panel-body">
+
+
+                <p>(#FirstName#) it is (TODAY'S DATE) do I have your permission to record a brief summary of the information we have just discussed to share with the Doctor who will be reviewing your medication information? (CLEAR YES TO CONTINUE)</p>
+
+                <p>At the end of each question I just need a clear yes/correct for verification purposes.</p>
+
+                <p>Please state your full name and Date of Birth. What address would you like your (PERSCRIPTION/DME) shipped to?</p>
+
+                <br>
+
+                <p>You stated your Major Medical Conditions, now or in the pas (including cancer) are the following...</p>
+                <p>Medical Conditions: (#MedicalConditions#)</p>
+                <p>Cancer: (#HaveHadCancer#)</p>
+                <p>(IS THIS CORRECT?)</p>
+
+                <br>
+
+                <p>You stated All your Previous Surgeries included...</p>
+                <p>Surgeries: (#SurgeryForPain#)</p>
+                <p>(IS THIS CORRECT?)</p>
+
+                <br>
+
+                <p>You stated your Medical Allergies are...</p>
+                <p>Allergies: (#MedicalAllergies#)</p>
+                <p>(IS THIS CORRECT?)</p>
+
+                <br>
+
+                <p>You stated your Current Medications are...</p>
+                <p>Medications: (#Medications#)</p>
+                <p>(IS THIS CORRECT?)</p>
+
+                <br>
+
+                <p>You stated that you do not have dementia, Alzheimers, and you are the decision maker in making a medical decision...</p>
+                <p>Dementia or Alzheimers: (##)</p>
+                <p>(IS THIS CORRECT?)</p>
+
+                <br>
+
+                <p>You stated your Average Cholesterol Level is...</p>
+                <p>Cholesterol: (#CholestrolLevel#)</p>
+                <p>(IS THIS CORRECT?)</p>
+
+                <br>
+
+                <p>You stated your Arthritic status and are of body is...</p>
+                <p>Arthritic status: (##)</p>
+                <p>(IS THIS CORRECT?)</p>
+
+                <br>
+
+                <p>I show you are requesting a Pain Cream for...</p>
+                <p>Pain Cream: (##)</p>
+                <p>(IS THIS CORRECT?)</p>
+
+                <br>
+
+                <div class="fname">
+                    <p>I show you are requesting Back Brace for...</p>
+                    <p></p>
+                    <p>(IS THIS CORRECT?)</p>
+
+                    <p>I show Waist Size is...</p>
+                    <p></p>
+                    <p>(IS THIS CORRECT?)</p>
+
+                    <p>I show you are requesting a (##) knee brace. (IS THIS CORRECT?)</p>
+
+                    <p>I show you are requesting ankle brace and your Shoe Size is...</p>
+                    <p></p>
+                    <p>(IS THIS CORRECT?)</p>
+
+                    <p>I show you are requesting (##) wrist brace. (IS THIS CORRECT?)</p>
+
+                    <p>I show you are requesting (##) shoulder brace. (IS THIS CORRECT?)</p>
+
+                </div>
+                <div class="lname">
+                    <p>Products Requested:</p>
+                    <p>(#ProductsRequested#)</p>
+                </div>
+                <div class="clear"></div>
+
+                <br>
+
+                <p>I show you are requesting Best Day to Call is...</p>
+                <p></p>
+                <p>(IS THIS CORRECT?)</p>
+
+                <p>I show that you are not in the process of receiving a brace, and you have not received a brace in the last 5 years. (IS THIS CORRECT?)</p>
+
+                <p>(#FirstName#) (#LastName#) If the Doctor does prescribe these items after reviewingyour medical intake information, you will have the freedom to direct these orders to a (COMPOUNDING PHARMACY AN/OR DME SUPPLIER, and LABORATORY) of your
+                    choice. If you would like we can have one of the participating (COMPOUNDING PHARMACIES AND/OR DME SUPPLIERS LAB) deliver your items right to your door via mail order. Is that how you would like to proceed send the products directly
+                    to your door? (MUST BE A CLEAR YES OR NO)</p>
+
+                <p>Please Confirm that you reuqested information that has now led to the order for the equipment...</p>
+                <p></p>
+                <p>(IS THIS CORRECT?)</p>
+
+                <p>This concludes the information needed. Your medical notes will be reviewed by an on-call doctor who is licensed in your state. The doctor will let us know if the products your requesting are medically necessary. Do you give us consent
+                    to transfer your information to the on-call doctor to call you and do a consult?</p>
+
+                <br>
+
+
+                <div class="panel-footer">
+
+                    <div class="fname">
+                        <input type="submit" control="submit" action="navigate" navigate-to="Brace" value="Back" class="control-navigate btn btn-primary form-control">
+                    </div>
+                    <div class="lname">
+                        <input type="submit" control="submit" action="submit_and_navigate" navigate-to="Brace Post" value="Submit" class="control-submit form-control">
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </form>
+</body>
+
+</html>
+<style type="text/css">
+    .dynamic-form > .panel-primary > .panel-body > .form-group > h4 {
+    margin: 10px 0px 10px 0px;
+}
+
+.dynamic-form > .panel-primary > .panel-body > .form-group > .locked {
+    margin: 10px 0px;
+}
+
+.dynamic-form > .panel-primary > .panel-body > .form-group > h4 {
+    margin: 10px 0px 10px 0px;
+}
+
+.dynamic-form > .panel-primary > .panel-body > .form-group > .locked {
+    margin: 10px 0px;
+}
+
+.dynamic-form > .panel-primary > .panel-body > .form-group > h4 {
+    margin: 10px 0px 10px 0px;
+}
+
+.dynamic-form > .panel-primary > .panel-body > .form-group > .locked {
+    margin: 10px 0px;
+}
+
+.dynamic-form > .panel-primary > .panel-body > .form-group > h4 {
+    margin: 10px 0px 10px 0px;
+}
+.panel-heading{
+        background:#2d3c5a!important;
+}
+.dynamic-form > .panel-primary > .panel-body > .form-group > h4 {
+    font-weight: 700;
+}
+
+.dynamic-form > .panel-primary > .panel-body > .form-group > h4 {
+    font-weight: 700;
+}
+
+.dynamic-form > .panel-primary > .panel-body > .form-group > h4 {
+    font-weight: 600;
+}
+
+.dynamic-form > .panel-primary > .panel-heading > h3 {
+    margin: 0px 0px 0px 0px;
+
+}
+@font-face {
+   font-family: myFont;
+   src: url('http://www.chasedatacorp.com/assets/fonts/segoeui.ttf');
+}
+
+body{
+    font-family:myFont;
+}           
+.fname{
+   display:inline-block;
+   width:49.5%;
+   float:left;
+   margin-bottom :15px;
+}
+
+.lname{
+    display:inline-block;
+    width:49.5%;
+    float:right;
+    margin-bottom :15px;
+}
+
+.panel-body{
+    background-color:#eee;
+}
+
+input[type=submit]{
+    background: #2d3c5a;
+    color: white;
+    height: 40px;
+    font-size: 20px;
+    padding: 0px 0px;
+    letter-spacing: 2px;
+}
+
+
+input,
+input::-webkit-input-placeholder {
+    font-size: 15px;
+}
+
+
+select:required:invalid {
+    color: #999;
+    padding-bottom: 0px!important;
+    font-size: 12px!important;
+}
+
+select{
+    padding-right: calc(24px);
+    background-size: .5em;
+    background-image: url("data:image/svg+xml;utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201000%201805.18%22%3E%3Cpath%20fill%3D%22%23000000%22%20d%3D%22M461.6%2C643.4L10.9%2C79.9C-14.9%2C47.7%2C8%2C0%2C49.3%2C0h901.5c41.2%2C0%2C64.1%2C47.7%2C38.4%2C79.9L538.4%2C643.4%09C518.7%2C668%2C481.3%2C668%2C461.6%2C643.4z%22%20transform%3D%22rotate%28180%20500%20902.59%29%20translate%280%201143.28%29%22%3E%3C%2Fpath%3E%3Cpath%20fill%3D%22%23000000%22%20d%3D%22M461.6%2C643.4L10.9%2C79.9C-14.9%2C47.7%2C8%2C0%2C49.3%2C0h901.5c41.2%2C0%2C64.1%2C47.7%2C38.4%2C79.9L538.4%2C643.4%09C518.7%2C668%2C481.3%2C668%2C461.6%2C643.4z%22%20transform%3D%22translate%280%201143.28%29%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E")!important;
+    background-repeat: no-repeat;
+    background-position: right 6px top 50%;
+    -webkit-appearance: none;
+}
+option[value=""]{
+    display: none;
+}
+
+h4{
+    letter-spacing:2px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.first{
+    display:inline-block!important;
+    width:33%!important;
+    margin-right:0.5%;
+    margin-bottom: 15px;
+    float:left;
+}
+.second{
+    display:inline;
+    width:33%!important;
+    float:left;
+    margin-right:0.5%;
+    margin-bottom: 15px;
+}
+
+.third{
+    display:inline;
+    width:33%!important;
+    float:right;
+    margin-bottom: 15px;
+}
+
+.padding{
+    padding-top:15px;
+}
+
+p {
+    font-size: 20px;    
+}
+label {
+    font-size: 20px;    
+}
+.center {
+    text-align: center; 
+}
+.clear {
+    clear:both; 
+}
+</style>

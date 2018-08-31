@@ -65,13 +65,13 @@
                             <input type="hidden" control="input " id="VisionCoverage" value="(#Vision Coverage#)">
 
                             <button class="button hidden submit" id="submit">SAVE</button>
-                            <input type="submit" control="submit" action="submit_and_navigate" navigate-to="step16" value="NEXT" class="button hidden next step16">
-                            <input type="submit" control="submit" action="submit_and_navigate" navigate-to="step14" value="PREVIOUS" class="button hidden pre step14">
-                            <input type="submit" control="submit" action="submit_and_navigate" navigate-to="step9" value="step9" class="button hidden step9">
-                            <input type="submit" control="submit" action="submit_and_navigate" navigate-to="step10" value="step10" class="button hidden step10">
-                            <input type="submit" control="submit" action="submit_and_navigate" navigate-to="step11" value="step11" class="button hidden step11">
-                            <input type="submit" control="submit" action="submit_and_navigate" navigate-to="step12" value="step12" class="button hidden step12">
-                            <input type="submit" control="submit" action="submit_and_navigate" navigate-to="step13" value="step13" class="button hidden step13">
+                            <input type="submit" control="submit" action="submit_and_navigate" navigate-to="step16_rev3" value="NEXT" class="button hidden next step16">
+                            <input type="submit" control="submit" action="submit_and_navigate" navigate-to="step14_rev3" value="PREVIOUS" class="button hidden pre step14">
+                            <input type="submit" control="submit" action="submit_and_navigate" navigate-to="step9_rev3" value="step9" class="button hidden step9">
+                            <input type="submit" control="submit" action="submit_and_navigate" navigate-to="step10_rev3" value="step10" class="button hidden step10">
+                            <input type="submit" control="submit" action="submit_and_navigate" navigate-to="step11_rev3" value="step11" class="button hidden step11">
+                            <input type="submit" control="submit" action="submit_and_navigate" navigate-to="step12_rev3" value="step12" class="button hidden step12">
+                            <input type="submit" control="submit" action="submit_and_navigate" navigate-to="step13_rev3" value="step13" class="button hidden step13">
 
 
                             <div class="col-sm-12">
@@ -88,6 +88,7 @@
                                         <div class="col-sm-5 nopadding">
                                             <label>App Status</label>
                                             <select field-name="App Status" class="form-control" name="App Status">
+                                                <option value="(#App Status#)" selected>(#App Status#)</option>
                                                 <option value="Approved">Approved</option>
                                                 <option value="Declined">Declined</option>
                                                 <option value="Pending">Pending</option>
@@ -104,22 +105,23 @@
                                     <div class="col-sm-6">
                                         <label><strong>Sold Agent</strong></label>
                                         <select name="Sold Agent" value="(#Sold Agent#)" class="form-control">
-                                                <option>Amanda Tompkins</option>
-                                                <option>Barry Lyons</option>
-                                                <option>Colter Stecklein</option>
-                                                <option>Courtney Strobeck</option>
-                                                <option>David Maverick</option>
-                                                <option>Jane Schulz</option>
-                                                <option>Janice Adams</option>
-                                                <option>Jeff Tofoya</option>
-                                                <option>Josh Bowers</option>
-                                                <option>Kelly Tomlinson</option>
-                                                <option>Lynn Sperry</option>
-                                                <option>Mark Ross</option>
-                                                <option>Melanie Montgomery</option>
-                                                <option>Mike Grasso</option>
-                                                <option>Mike Stolp</option>
-                                            </select>
+                                            <option value="(#Sold Agent#)" selected>(#Sold Agent#)</option>
+                                            <option>Amanda Tompkins</option>
+                                            <option>Barry Lyons</option>
+                                            <option>Colter Stecklein</option>
+                                            <option>Courtney Strobeck</option>
+                                            <option>David Maverick</option>
+                                            <option>Jane Schulz</option>
+                                            <option>Janice Adams</option>
+                                            <option>Jeff Tofoya</option>
+                                            <option>Josh Bowers</option>
+                                            <option>Kelly Tomlinson</option>
+                                            <option>Lynn Sperry</option>
+                                            <option>Mark Ross</option>
+                                            <option>Melanie Montgomery</option>
+                                            <option>Mike Grasso</option>
+                                            <option>Mike Stolp</option>
+                                        </select>
                                         <!-- <input type="text" control="input " class="form-control" field-name="Sold Agent" name="Sold Agent" value="(#Sold Agent#)"> -->
                                     </div>
                                     <div class="col-sm-6">
@@ -255,17 +257,19 @@
                                     <div class="col-sm-6">
                                         <label>Gender</label>
                                         <select field-name="Gender" class="form-control" name="Gender">
-                                                <option value="Male">Male</option>
-                                                <option value="Female">Female</option>
-                                            </select>
+                                            <option value="(#Gender#)" selected>(#Gender#)</option>
+                                            <option value="Male">Male</option>
+                                            <option value="Female">Female</option>
+                                        </select>
                                     </div>
                                     <div class="col-sm-6">
                                         <label>Account Type</label>
                                         <select field-name="Account Type" class="form-control" name="Account Type">
-                                                <option value="Checking">Checking</option>
-                                                <option value="DX Card">DX Card</option>
-                                                <option value="Credit Debit">Credit Debit</option>
-                                            </select>
+                                            <option value="(#Account Type#)" selected>(#Account Type#)</option>
+                                            <option value="Checking">Checking</option>
+                                            <option value="DX Card">DX Card</option>
+                                            <option value="Credit Debit">Credit Debit</option>
+                                        </select>
                                     </div>
                                 </div>
 
@@ -274,15 +278,16 @@
                                     <div class="col-sm-6">
                                         <label>Carrier Product 2</label>
                                         <select field-name="Carrier Product 2" class="form-control" name="Carrier Product 2" id="carrier">
-                                                <option value="Royal Neighbors of America">Royal Neighbors of America</option>
-                                                <option value="Baltimore Life">Baltimore Life</option>
-                                                <option value="Liberty Bankers Life">Liberty Bankers Life</option>
-                                                <option value="American General">American General</option>
-                                                <!--<option value="Great Western">Great Western</option>-->
-                                                <!--<option value="Foresters">Foresters</option>-->
-                                                <!--<option value="Prosperity">Prosperity</option>-->
-                                                <!--<option value="5Star Life">5Star Life</option>-->
-                                            </select>
+                                            <option value="(#Carrier Product 2#)" selected>(#Carrier Product 2#)</option>
+                                            <option value="Royal Neighbors of America">Royal Neighbors of America</option>
+                                            <option value="Baltimore Life">Baltimore Life</option>
+                                            <option value="Liberty Bankers Life">Liberty Bankers Life</option>
+                                            <option value="American General">American General</option>
+                                            <!--<option value="Great Western">Great Western</option>-->
+                                            <!--<option value="Foresters">Foresters</option>-->
+                                            <!--<option value="Prosperity">Prosperity</option>-->
+                                            <!--<option value="5Star Life">5Star Life</option>-->
+                                        </select>
                                     </div>
                                     <div class="col-sm-6">
                                         <label>Plan</label>
@@ -417,34 +422,37 @@
                                     <div class="col-sm-6">
                                         <label>Dental Plan</label>
                                         <select name="Dental Plan" field-name="Dental Plan" class="form-control">
-                                                <option value="None">None</option>                                              
-                                                <option value="1500">1500</option>
-                                                <option value="3000">3000</option>
-                                                <option value="5000">5000</option>
-                                            </select>
+                                            <option value="(#Dental Plan#)" selected>(#Dental Plan#)</option>
+                                            <option value="None">None</option>
+                                            <option value="1500">1500</option>
+                                            <option value="3000">3000</option>
+                                            <option value="5000">5000</option>
+                                        </select>
                                     </div>
                                     <div class="col-sm-6">
                                         <label>Dental Coverage</label>
-                                        <select name="Dental Coverage" field-name="Dental Coverage" class="form-control">                                                
-                                                <option value="None">None</option>
-                                                <option value="Member">Member</option>
-                                                <option value="Member &amp; Spouse">Member &amp; Spouse</option>
-                                                <option value="Member & Children">Member & Children</option>                                                
-                                                <option value="Family">Family</option>
-                                            </select>
+                                        <select name="Dental Coverage" field-name="Dental Coverage" class="form-control">              
+                                            <option value="(#Dental Coverage#)" selected>(#Dental Coverage#)</option>                                  
+                                            <option value="None">None</option>
+                                            <option value="Member">Member</option>
+                                            <option value="Member &amp; Spouse">Member &amp; Spouse</option>
+                                            <option value="Member & Children">Member & Children</option>
+                                            <option value="Family">Family</option>
+                                        </select>
                                     </div>
                                 </div>
                                 <!--Twenty-Ninth Row-->
                                 <div class="col-sm-12">
                                     <div class="col-sm-6">
                                         <label>Vision Coverage</label>
-                                        <select name="Vision Coverage" field-name="Vision Coverage" class="form-control">                                                
-                                                <option value="None">None</option>
-                                                <option value="Member">Member</option>
-                                                <option value="Member &amp; Spouse">Member &amp; Spouse</option>
-                                                <option value="Member & Children">Member & Children</option>                                                
-                                                <option value="Family">Family</option>
-                                            </select>
+                                        <select name="Vision Coverage" field-name="Vision Coverage" class="form-control">         
+                                            <option value="(#Vision Coverage#)" selected>(#Vision Coverage#)</option>                                        
+                                            <option value="None">None</option>
+                                            <option value="Member">Member</option>
+                                            <option value="Member &amp; Spouse">Member &amp; Spouse</option>
+                                            <option value="Member & Children">Member & Children</option>
+                                            <option value="Family">Family</option>
+                                        </select>
                                     </div>
                                     <div class="col-sm-6">
                                         <label><strong>Enrollment Rep</strong></label>
