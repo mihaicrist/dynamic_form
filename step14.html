@@ -1220,17 +1220,13 @@
     }
 </style>
 <script>
-    function save() {
-        document.getElementsByClassName('submit')[0].click();
+    function hideTags() {
+        var names = ['rna', 'balt', 'lbl', 'amer'];
+        for (var i = 0; i < names.length; i++) {
+            document.getElementsByClassName(names[i])[0].style.display = 'none';
+        }
     }
 
-    function next() {
-        document.getElementsByClassName('next')[0].click();
-    }
-
-    function pre() {
-        document.getElementsByClassName('pre')[0].click();
-    }
 
     function planSet(company) {
 
@@ -1266,6 +1262,17 @@
         }
         document.getElementById('Plan').value = selects[0].value;
         document.getElementsByClassName('plan')[0].value = selects[1].value;
+
+        hideTags();
+        if (company == 'Royal Neighbors of America') {
+            document.getElementsByClassName('rna')[0].style.display = 'inline-block';
+        } else if (company == 'Baltimore Life') {
+            document.getElementsByClassName('balt')[0].style.display = 'inline-block';
+        } else if (company == 'Liberty Bankers Life') {
+            document.getElementsByClassName('lbl')[0].style.display = 'inline-block';
+        } else if (company == 'American General') {
+            document.getElementsByClassName('amer')[0].style.display = 'inline-block';
+        }
     }
 
     (function() {
